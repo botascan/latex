@@ -1,0 +1,102 @@
+% Copyright (c) 2025 Bora Tascan
+% SPDX-License-Identifier: MIT
+
+% ********************************
+%          CONFIG BEGIN
+% ********************************
+
+\documentclass[
+    12pt,
+    oneside,
+    paper=a4,
+    parskip=full
+]{scrartcl}
+
+
+\setlength{\parskip}{1\baselineskip}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\headheight}{0.1pt}
+
+% ********************************
+%            PACKAGES
+% ********************************
+
+\usepackage{
+    amssymb,
+    amsmath,
+    amsthm,
+    bookmark,
+    cancel,
+    csquotes,
+    enumitem,
+    graphicx,
+    hyperref,
+    listings,
+    makeidx,
+    mathrsfs,
+    mathtools,
+    microtype,
+    multicol,
+    natbib,
+    nicefrac,
+    pgfplots,
+    scrlayer-scrpage,
+    setspace,
+    siunitx,
+    stmaryrd,
+    tikz,
+    ulem,
+    wrapfig,
+    xcolor
+}
+
+\setcounter{secnumdepth}{3}
+
+\makeatletter
+\ihead{\@author}
+\chead{\@title}
+\makeatother
+
+% ********************************
+%           LST-CONFIG
+% ********************************
+\lstset{
+    basicstyle=\linespread{1.15}\ttfamily,
+    frame=single,
+    breakatwhitespace=false,
+    commentstyle=\color{teal},
+    escapeinside={\%*}{*)},
+    numbers=left,
+    numberstyle=\tiny\color{black},
+    showstringspaces=false,
+}
+
+% ********************************
+%           OTHER-CONFIG
+% ********************************
+
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,open={(}, close={)}}
+
+% ********************************
+%          USER INPUT
+% ********************************
+
+\usepackage[naustrian]{babel}
+\title{Title of Paper}
+\author{Author/s}
+\date{Date}
+
+\usepackage[most]{tcolorbox}
+
+% ********************************
+%          CONFIG END
+% ********************************
+
+\begin{document}
+
+\maketitle
+
+% ...
+    
+\end{document}
