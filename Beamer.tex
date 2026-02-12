@@ -1,0 +1,100 @@
+\documentclass{beamer}
+
+\usetheme{CambridgeUS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% --- TITLE PAGE --- %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[titleAbbreviation]{Title of the Presentation}
+
+\subtitle{Subtitle}
+\author[M. Mustermann, A. Algorithmus]{Max Mustermann, Alicia Algorithmus}
+\date[sumDate]{sumDate}
+
+\setbeamertemplate{title page}{
+    \begin{center}
+        {\usebeamerfont{title}\inserttitle\par}
+        \vspace{0.3cm}
+        {\usebeamerfont{subtitle}\insertsubtitle\par}
+        \vspace{0.5cm}
+        {\usebeamerfont{author}\insertauthor\par}
+        \vspace{0.3cm}
+        {\usebeamerfont{institute}\insertinstitute\par}
+        \vspace{0.3cm}
+        {\usebeamerfont{date}\insertdate\par}
+        \vspace{0.50cm}
+        % \includegraphics[width=5.5cm]{logo.png}
+    \end{center}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% --- INSTITUTE --- %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\institute[XXX]{
+    Computer Science Department\\
+    University of X
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% --- OTHER CONFIGS --- %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}
+    %\frametitle{Verzeichnis}
+    \tableofcontents[
+        currentsection
+    ]
+  \end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% --- CUSTOMISE END --- %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%\logo{
+%  \begin{minipage}{1cm}
+%    %\hfill
+%    \includegraphics[height=1cm]{logo2.png}
+%  \end{minipage}
+%}
+
+\begin{frame}{Table of Contents}
+    \tableofcontents[]
+\end{frame}
+
+\section{Introduction}
+
+\subsection{SSSP Algorithms}
+
+\begin{frame}{SSSP Algorithmen}
+    \begin{itemize}
+        \item<1-> Single-Source Shortest Path Algorithms (SSSP's) 
+        \begin{itemize}
+            \item<2-> Input: a Graph $G$ and a Startnode $s$
+            \item<2-> Output: Shortest path from s to all other nodes
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[plain]
+    \hypertarget{endearly}{}
+    \begin{center}
+        \vspace{2.5cm}
+        \Huge \color{teal}Thank you for your Attention!
+        \vspace{1.25cm}
+    \end{center}
+\end{frame}
+
+\end{document}
