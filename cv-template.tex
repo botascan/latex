@@ -1,0 +1,94 @@
+% ============================================================
+% Simple & Elegant CV Template
+% Compile with: pdflatex cv-template.tex
+% ============================================================
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{linkblue}{HTML}{2B5C8A}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+}
+
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% \cventry{Title}{Date Range}{Organization/Location}{Optional detail}
+\newcommand{\cventry}[4]{%
+    \textbf{#1} \hfill \textit{#2} \\
+    \textit{#3} \hfill #4 \par\vspace{4pt}%
+}
+
+\setlength{\parindent}{0pt}
+
+% ============================================================
+% Fill in your details below
+% ============================================================
+
+\newcommand{\myname}{Your Name}
+\newcommand{\mylocation}{City, Country}
+\newcommand{\myemail}{your.email@example.com}
+\newcommand{\mylinkedin}{https://linkedin.com/in/your-profile}
+\newcommand{\mygithub}{https://github.com/your-username}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries \myname} \\[6pt]
+    \mylocation \\[3pt]
+    \href{mailto:\myemail}{\myemail} \\[3pt]
+    \href{\mylinkedin}{LinkedIn} \enspace$\cdot$\enspace
+    \href{\mygithub}{GitHub}
+\end{center}
+
+% ---- Education ----
+\section{Education}
+
+\cventry{Degree Title}{Start -- End}{University Name}{}
+
+\cventry{Degree Title}{Start -- End}{University Name}{}
+
+% ---- Experience ----
+\section{Experience}
+
+\cventry{Job Title}{Start -- Present}{Company, Location}{}
+
+\cventry{Job Title}{Start -- End}{Company, Location}{}
+
+\cventry{Job Title}{Start -- End}{Company, Location}{}
+
+% ---- Technical Skills ----
+\section{Technical Skills}
+
+Skill 1 \enspace$\cdot$\enspace Skill 2 \enspace$\cdot$\enspace Skill 3 \enspace$\cdot$\enspace Skill 4 \enspace$\cdot$\enspace Skill 5
+
+% ---- Languages ----
+\section{Languages}
+
+Language 1 (Native) \enspace$\cdot$\enspace Language 2 (Fluent) \enspace$\cdot$\enspace Language 3 (Intermediate)
+
+% ---- Soft Skills (optional, remove if not needed) ----
+\section{Soft Skills}
+
+Skill 1 \enspace$\cdot$\enspace Skill 2 \enspace$\cdot$\enspace Skill 3 \enspace$\cdot$\enspace Skill 4
+
+% ---- Achievements (optional, remove if not needed) ----
+\section{Achievements}
+
+Achievement or Award Title
+
+\end{document}
